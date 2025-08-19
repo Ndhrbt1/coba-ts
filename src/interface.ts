@@ -33,11 +33,18 @@ interface Rectangle {
   height: number;
   width: number;
 }
+
+const rectangley: Partial<Rectangle> = {
+  height: 0,
+  // width: 0,
+};
+console.log(rectangley);
+
 // extends
 interface Rectanglex extends Rectangle {
   color: string;
 }
-const rectangle: Rectanglex = {
+const rectangle: Required<Rectanglex> = {
   height: 20,
   width: 10,
   color: "white",

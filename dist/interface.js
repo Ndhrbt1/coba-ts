@@ -25,6 +25,11 @@ console.log(CardinalDirections.North);
 // logs 4
 console.log(CardinalDirections.West);
 console.log("----- Interface -----");
+const rectangley = {
+    height: 0,
+    // width: 0,
+};
+console.log(rectangley);
 const rectangle = {
     height: 20,
     width: 10,

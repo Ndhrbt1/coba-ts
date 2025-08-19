@@ -22,7 +22,15 @@ class Mahasiswa extends Manusia {
   fakultas: string;
   jurusan: string;
   angkatan: number;
-  constructor(fakultas: string, jurusan: string, angkatan: number) {
+  constructor({
+    fakultas,
+    jurusan,
+    angkatan,
+  }: {
+    fakultas: string;
+    jurusan: string;
+    angkatan: number;
+  }) {
     super("f----", 22);
     (this.fakultas = fakultas),
       (this.jurusan = jurusan),
@@ -33,7 +41,11 @@ class Mahasiswa extends Manusia {
     console.log("'till 7 years u still not loving me");
   }
 }
-const mahasiswa = new Mahasiswa("edu", "gatau", 2022);
+const mahasiswa = new Mahasiswa({
+  fakultas: "edu",
+  jurusan: "gatau",
+  angkatan: 2022,
+});
 console.log(mahasiswa.getName());
 console.log(mahasiswa.getUmur());
 console.log(mahasiswa.fakultas);
